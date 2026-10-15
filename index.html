@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Placement Portal</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f3f6fc;
+            color: #1e293b;
+        }
+
+        header {
+            background: #173b70;
+            color: white;
+            padding: 25px 7%;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav {
+            margin-top: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        main {
+            padding: 25px 7%;
+        }
+
+        .welcome {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 5px solid #2878d0;
+        }
+
+        .stats, .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+            gap: 18px;
+            margin: 20px 0;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 3px 12px #dce3ef;
+        }
+
+        .stat {
+            color: #1766bd;
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        h2 {
+            color: #173b70;
+            margin-top: 30px;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #dff5e8;
+            color: #166534;
+            padding: 6px 10px;
+            border-radius: 5px;
+        }
+
+        footer {
+            background: #173b70;
+            color: white;
+            text-align: center;
+            padding: 18px;
+        }
+
+        @media (max-width: 600px) {
+            nav a {
+                display: inline-block;
+                margin: 7px;
+            }
+
+            main {
+                padding: 20px 5%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Student Placement Portal</h1>
+    <p>Your gateway to career opportunities</p>
+
+    <nav>
+        <a href="#dashboard">Dashboard</a>
+        <a href="#students">Students</a>
+        <a href="#companies">Companies</a>
+        <a href="#drives">Recruitment Drives</a>
+    </nav>
+</header>
+
+<main>
+
+    <section class="welcome">
+        <h2>Welcome to Campus Placements</h2>
+        <p>
+            Explore placement opportunities, company profiles,
+            eligibility criteria and upcoming recruitment drives.
+        </p>
+    </section>
+
+    <section id="dashboard">
+        <h2>Placement Statistics</h2>
+
+        <div class="stats">
+            <div class="card">
+                <p>Registered Students</p>
+                <div class="stat">1250</div>
+            </div>
+
+            <div class="card">
+                <p>Recruiting Companies</p>
+                <div class="stat">85</div>
+            </div>
+
+            <div class="card">
+                <p>Students Placed</p>
+                <div class="stat">720</div>
+            </div>
+
+            <div class="card">
+                <p>Highest Package</p>
+                <div class="stat">24 LPA</div>
+            </div>
+        </div>
+
+        <p><small>Statistics are sample project data.</small></p>
+    </section>
+
+    <section id="students">
+        <h2>Student Profiles</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Student Profile 1</h3>
+                <p>Department: Computer Science</p>
+                <p>CGPA: 8.7</p>
+                <p>Skills: Java, Python, SQL</p>
+                <span class="tag">Eligible</span>
+            </div>
+
+            <div class="card">
+                <h3>Student Profile 2</h3>
+                <p>Department: Information Technology</p>
+                <p>CGPA: 8.2</p>
+                <p>Skills: HTML, CSS, Python</p>
+                <span class="tag">Eligible</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="companies">
+        <h2>Company Information</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>TCS</h3>
+                <p>IT services and software development.</p>
+                <p>Eligibility: CGPA 7.0+</p>
+            </div>
+
+            <div class="card">
+                <h3>Infosys</h3>
+                <p>Technology consulting and digital services.</p>
+                <p>Eligibility: CGPA 6.5+</p>
+            </div>
+
+            <div class="card">
+                <h3>Wipro</h3>
+                <p>IT services and engineering solutions.</p>
+                <p>Eligibility: CGPA 7.0+</p>
+            </div>
+
+            <div class="card">
+                <h3>Accenture</h3>
+                <p>Technology and business consulting.</p>
+                <p>Eligibility: CGPA 7.0+</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="drives">
+        <h2>Upcoming Recruitment Drives</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>TCS</h3>
+                <p>Role: Software Engineer</p>
+                <p>Eligibility: CGPA 7.0+</p>
+                <p>Date: To be announced</p>
+                <span class="tag">Upcoming</span>
+            </div>
+
+            <div class="card">
+                <h3>Infosys</h3>
+                <p>Role: Systems Engineer</p>
+                <p>Eligibility: CGPA 6.5+</p>
+                <p>Date: To be announced</p>
+                <span class="tag">Upcoming</span>
+            </div>
+
+            <div class="card">
+                <h3>Accenture</h3>
+                <p>Role: Associate Software Engineer</p>
+                <p>Eligibility: CGPA 7.0+</p>
+                <p>Date: To be announced</p>
+                <span class="tag">Upcoming</span>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>University Placement Cell | Student Placement Portal</p>
+</footer>
+
+</body>
+</html>
