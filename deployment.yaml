@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: placement-portal
-          image: raghavendrasaladi/automatedstudentpavan:latest
+          image: image: kurellapoojitha/automatedstudentpoojii:latest
           ports:
             - containerPort: 80
           readinessProbe:
